@@ -44,8 +44,7 @@
     right: 2rem;
 }
 
-.p1 {
-    
+.pr {
     color: #f8f9fa;
     width: fit-content;
     font-size: calc(9rem + 1.2vw);
@@ -54,24 +53,6 @@
     position: absolute;
     flex-direction: row;
     top: 2%;
-    right: 53%;
-    z-index: 3;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Teko', sans-serif;
-    text-shadow: 0px 0px 15px rgba(0, 0, 0, 170);
-}
-.p2 {
-    
-    color: #198754;
-    width: fit-content;
-    font-size: calc(9rem + 1.2vw);
-    height: fit-content;
-    display: flex;
-    position: absolute;
-    flex-direction: row;
-    top: 2%;
-    right: 29%;
     z-index: 3;
     justify-content: center;
     align-items: center;
@@ -168,10 +149,7 @@
 }
 
 @media (max-width: 1024px) {
-    .p1 {
-        font-size: calc(10.7rem + 1.1vw);
-    }
-    .p2 {
+    .pr {
         font-size: calc(10.7rem + 1.1vw);
     }
     .boxButtons  {
@@ -193,10 +171,7 @@
 }
 
 @media (max-width: 1440px) {
-    .p1 {
-        font-size: calc(3.7rem + 4vw);
-    }
-    .p2 {
+    .pr {
         font-size: calc(3.7rem + 4vw);
     }
 
