@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -19,10 +19,13 @@
 
 </head>
 
-<body class="bg-light">
-    <div class="container-fluid bg-gradient bg-dark">
+<body class="bg-dark">
+     <img src="/consult/docs/img/bg1.jpg" alt="" class="img-fluid  w-100 position-absolute ">
+     <img src="/consult/docs/img/giphy.gif" alt="" class="gi-1 w-25 h-100 position-absolute">
+     <img src="/consult/docs/img/giphy.gif" alt="" class="gi-2  w-25 h-100 position-absolute">
+     <div class="container-fluid bg-gradient bg-dark">
         <main>
-            <header class="hNav d-flex flex-wrap justify-content-center py-3 mb-2 ">
+            <header class="hNav d-flex flex-wrap justify-content-center py-2 mb-2 ">
                 <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
                     <img src="/docs/img/android-chrome-192x192.png" class="bi me-2" width="35" height="32">
                     <span class="fs-2 text-white" translate="no">Calc Média</span>
@@ -39,42 +42,42 @@
         </main>
         </div>
     
-  <div class="container">
-      <div class="box-fluid">
-    <div class="table-responsive ">
-                 <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                  </tr>
-                </tbody>
-              </table>
-           </div>
-           </div>
+      <div class="boxName bg-light bg-gradient rounded-2 col-md-5">
+             <div class="homeText border-bottom">
+            <div class="mainText ">
+              <h1 class="p1 d-flex text-dark">Calc</h1>
+            <h1 class="p2 d-flex text-success">Média</h1>
+            </div>
+            <blockquote class="blockquote text-secondary text-center">Para começar, digite seu nome e escolha o modelo da tabela.</blockquote>
+            </div>
+            
+            <div class="naf mb-3 col-md-7 mx-auto">
+                <div class="form-floating mb-3 ">
+                    <input type="name" class="form-control" id="floatingInputName" placeholder="name" title="Insira seu nome">
+                    <label for="floatingInput">Nome</label>
+                  </div>
+                  <div class="col-md">
+                    <div class="form-floating">
+                      <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                        <option selected>Escolha sua tabela</option>
+                        <option value="1">Bimestral</option>
+                        <option value="2">Semestral</option>
+                        <option value="2">Anual</option>
+                      </select>
+                      <label for="floatingSelectGrid">Período</label>
+                    </div>
+                  </div>
+            </div>
+                        
+            <div class="goCalc">
+                <div class="d-grid gap-2 col-5 mx-auto">
+                    <button class="btn bg-gradient btn-lg btn-success" type="button">Pronto!</button>
+                    
+                  </div>
+            </div>
   </div>
-
+  
+ 
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
