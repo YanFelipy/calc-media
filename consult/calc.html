@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calc Média | Consulta</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+
+<body class="calc bg-dark">
+
+  <img src="../assets/img/bg2.jpg"class="img-fluid bg-fundo-calc">
+  <img src="../assets/img/giphy.gif" alt="" class="gifs gif-1  w-55 h-100 position-absolute">
+  <img src="../assets/img/giphy.gif" alt="" class="gifs gif-2 w-55 h-100 position-absolute">
+  
+  <div class="header-geral container-fluid bg-gradient bg-dark">
+    <main>
+      <header class="navegação-header d-flex flex-wrap justify-content-center py-2 mb-2 ">
+        <a href="../inicio.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <img src="../assets/img/android-chrome-192x192.png" class="nav-logo-calcmedia bi me-2" width="35" height="32">
+          <span class="nome-calcmedia-header fs-2 text-white" translate="no">Calc Média</span>
+        </a>
+
+        <ul class="lista-navegação nav nav-pills">
+          <li class="nav-item"><a href="../inicio.html" class="nav-link text-white" aria-current="page"><b>Início</b></a>
+          </li>
+          <li class="nav-item"><a href="./calc.html" class="nav-link  text-success">Calcule</a></li>
+          <li class="nav-item"><a href="#" class="nav-link text-white">Contato</a></li>
+          <li class="nav-item"><a href="#" class="nav-link text-white">Sobre</a></li>
+        </ul>
+      </header>
+    </main>
+  </div>
+
+  <div class="container principal-container">
+    <div class="box-nome-escola-enviar bg-light bg-gradient rounded-3">
+      <div class="textos-geral border-bottom">
+        <div class="textos-calcmedia-mark">
+          <h1 class="mark t1 d-flex text-dark">Calc<span class="mark t2 d-flex text-success"> Média</span></h1>
+            </div>
+        <blockquote class="blockquote-calc blockquote fs-6 text-secondary text-center">Para começar, digite seu nome e sua
+          escola/instituição. </blockquote>
+      </div>
+
+      <form class="form-nome-escola naf mb-3 col-md-7 mx-auto">
+        <div class="form-floating mb-3 fs-6">
+          <input type="name" class="form-control" id="floatingInputName" placeholder="text" title="Insira seu nome">
+          <label for="floatingInput">Nome</label>
+        </div>
+        <div class="form-floating mb-3 fs-6">
+          <input type="name" class="form-control" id="floatingInputSU" placeholder="text"
+            title="Insira sua escola ou universidade.">
+          <label for="floatingInput">Escola/Universidade</label>
+        </div>
+
+        <div class="go-calc">
+          <div class="d-grid gap-2 col-5 mx-auto">
+            <button class="btn bg-gradient btn-lg btn-success" onclick="test()">Pronto!</button>
+
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+  integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+</script>
+
+
+</html>
