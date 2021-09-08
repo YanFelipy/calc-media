@@ -18,7 +18,7 @@
 
 }
 
-.bg-fundo-inicio {
+.inicio .bg-fundo-inicio {
     border: none;
     min-width: 100vw;
     min-height: 100vh;
@@ -27,7 +27,7 @@
 
 }
 
-.pagina-inicial {
+.inicio .pagina-inicial {
     height: 100%;
     position: absolute;
     display: flex;
@@ -35,7 +35,7 @@
     align-items: center;
 }
 
-.box-calctext-inicio {
+.incio .box-calctext-inicio {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -63,7 +63,7 @@
     color: #198754;
 }
 
-.blockquote-inicio {
+.box-calctext-inicio .blockquote-inicio {
     text-align: center;
     position: relative;
     z-index: 3;
@@ -99,8 +99,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-
-/* ========= Página Calc  ===========  */
+/* =========== Página Calc  ===========  */
 
 .calc {
     display: flex;
@@ -157,12 +156,31 @@
 .navegação-header .nav-logo-calcmedia {
     vertical-align: -.125em;
 }
-
+.navegação-header .nav-logo-calcmedia:hover {
+    width: 40px;
+    height: 4vh;
+}
 .navegação-header .me-2 {
     margin-right: .5rem !important;
 }
 
-.principal-container {
+.lista-navegação .nav-item .nav-link {
+        color: #ffffff;
+    
+  }
+  
+  .lista-navegação .nav-item .calcule {
+    color: #198754;
+    
+  }
+
+.lista-navegação .nav-item .nav-link:hover {
+  color: #198754;
+  
+}
+
+
+.calc .principal-container {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -172,7 +190,7 @@
     z-index: 200;
 }
 
-.principal-container .box-nome-escola-enviar {
+.calc .principal-container .box-nome-escola-enviar {
     display: flex;
     position: absolute;
     flex-direction: column;
@@ -307,15 +325,71 @@
     .blockquote {
         font-size: 0.8em;
     }
+}
 
-    /*===( Calc 425px ) === */
+/*===( Calc 320px ) === */
 
+@media (max-width: 320px) {
+   .contato {
+        display: none;
+        }
+    .principal-container .box-nome-escola-enviar {
+        margin-top: 40%;
+        width: 70%;
+        height: 90vh;
+     
+    }
+}
+
+/*===( Calc 375px ) === */
+
+@media (min-width: 321px)and (max-width:375px) {
+    .principal-container .box-nome-escola-enviar {
+        margin-top: 30%;
+        width: 70%;
+        height: 90vh;
+     
+    }
+.navegação-header .lista-navegação {
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    font-size: 0.90em;
+}
+}
+.lista-navegação .nav-item {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+
+}
+
+
+/*===( Calc 425px ) === */
+
+@media (min-width:376px)and(max-width: 425px) {
+     
+    .navegação-header .lista-navegação {
+    font-size: 0.90em;
+
+    }
+
+    .principal-container .box-nome-escola-enviar {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        width: 80%;
+        height: 60vh;
+        z-index: 110;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.555);
+    }
 
 }
 
 /*===( Calc 768px ) === */
-@media (max-width: 767px) {
-    .gifs {
+@media (max-width: 768px) {
+    .gif-2 {
         display: none;
     }
 }
