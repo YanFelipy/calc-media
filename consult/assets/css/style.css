@@ -5,7 +5,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    user-select: text;
+    user-select: none;
     text-decoration: none;
     overflow: hidden;
 }
@@ -15,6 +15,9 @@ body {
     justify-content: center;
     max-width: 1950px;
     max-height: 100vh;
+    background: url(/consult/) no-repeat center center fixed;  
+          background-size: cover;
+
 }
 
 .gi-1 {
@@ -22,6 +25,7 @@ body {
     position: absolute;
     animation: slide-right linear infinite 50s;
 z-index: 1;
+display: none;
 
 }
 
@@ -29,18 +33,16 @@ z-index: 1;
     z-index: 1;
     position: absolute;
     animation: slide-left linear infinite 55s;
+    display: none;
 }
 
-.img-fluid {
-    opacity: 10%;
-   
-}
 
 .container-fluid {
     position: fixed;
     top: 0%;
     z-index: 100;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.555);
+   
    
 }
 
@@ -67,14 +69,20 @@ z-index: 1;
     margin-right: .5rem !important;
 }
 
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .boxName {
     display: flex;
     flex-direction: column;
     width: 500px;
     height: 55vh;
-    margin: 8% 40%; 
-    position: absolute;
-    z-index: 10;
+    z-index: 110;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.555);
 
 }
@@ -101,20 +109,17 @@ z-index: 1;
 
 .blockquote {
     width: 100%;
-    top: 24%;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: relative
 }
-
 
 .naf {
     margin-top: 7%;
     background-color: aliceblue;
     z-index: 2;
-    
-}
+    }
 
 .goCalc {
    margin-top: 5%;
