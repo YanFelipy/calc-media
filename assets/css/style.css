@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 
+
 /* ========= Página de Início ===========  */
 
 * {
@@ -28,33 +29,39 @@
 }
 
 .inicio .pagina-inicial {
+    width: 100%;
     height: 100%;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 2000px;
 }
 
-.incio .box-calctext-inicio {
+.incio .pagina-inicial .box-calctext-inicio {
     position: absolute;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 25%;
+    margin-left: 22%;
     margin-bottom: 5%;
+
     width: 700px;
     height: 500px;
+
+
 }
 
 .box-calctext-inicio .t1 {
     color: #f8f9fa;
-
-    font-size: calc(140px + 1.2vw);
+    justify-content: center;
+    display: flex;
+    font-size: 140px;
     position: relative;
-    margin-top: 2%;
     font-family: 'Teko', sans-serif;
     text-shadow: 3px 2px 10px rgba(0, 0, 0, 170);
+    margin-left: 18%;
     height: 150px;
 
 }
@@ -66,36 +73,40 @@
 .box-calctext-inicio .blockquote-inicio {
     text-align: center;
     position: relative;
+    margin-left: 18%;
     z-index: 3;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 120);
 
 }
 
-.box-buttons-inicio {
+.inicio .box-buttons-inicio {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     color: #f8f9fa;
     position: relative;
     z-index: 2;
-    margin: 60px 0px;
+    margin-top: 10%;
+    margin-left: 20%;
+    gap: 8px;
     width: 70%;
     height: 8vh;
 }
 
 .box-buttons-inicio .a-buttons {
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     color: #f8f9fa;
-    width: 100%;
-    height: 8vh;
+    width: 360px;
+    height: vh;
     text-decoration: none;
 }
 
 .a-buttons .btn {
     height: 8vh;
-    width: 90%;
+    width: 80%;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -217,34 +228,6 @@
     align-items: center;
 }
 
-
-
-.textos-calcmedia-mark .mark {
-    display: flex;
-    align-items: center;
-    height: 10vh;
-    width: 100%;
-    font-family: 'Teko', sans-serif;
-    text-shadow: 0px 0px 2px rgba(0, 0, 15, 0.90);
-    background-color: transparent;
-}
-
-.textos-calcmedia-mark .t1 {
-    margin-top: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    font-size: 7.2rem;
-}
-
-.textos-calcmedia-mark .t2 {
-    width: 230px;
-
-}
-
-
-
 .blockquote-calc {
     width: 100%;
     display: flex;
@@ -254,28 +237,27 @@
 }
 
 .form-nome-escola {
-    margin-top: 7%;
+    margin-top: 8%;
     z-index: 2;
 }
 
 .form-nome-escola .go-calc {
-    margin-top: 5%;
+    margin-top: 6%;
 }
 
 .calc .principal-container .tabela-de-notas-calc {
     margin-top: 5%;
     width: 1800px;
-    height: 70vh;
+    height: 75vh;
     background-color: white;
     visibility: hidden;
-
 
 }
 
 .calc .principal-container .tabela-de-notas-calc .ola-nome-escola-tabela {
     width: 100%;
     height: 5vh;
-    background-color: rgb(158, 158, 158);
+    background-color: rgb(121, 121, 121);
     position: relative;
     justify-content: start;
     align-items: center;
@@ -295,27 +277,45 @@
 
 .calc .principal-container .tabela-de-notas-calc .table {
     width: 100%;
-    height: 60vh;
+    height: 58vh;
     position: relative;
+
 }
 
+.calc .principal-container .tabela-de-notas-calc .table .mediaFinal {
+    color: crimson;
+    font-weight: bold;
+}
 
+.calc .principal-container .tabela-de-notas-calc .table .row-1 {
+    border-radius: 5px;
+    height: 4vh;
+    border: solid 1px;
 
+}
 
+.calc .principal-container .tabela-de-notas-calc .table .row-1:hover {
+    border-color: #3d6300;
+    background-color: #13ba4a;
+}
 
+.calc .principal-container .tabela-de-notas-calc .botoes-reset-calc {
+    background-color: rgb(121, 121, 121);
+    height: 7.5vh;
+    margin: 0px;
+    position: relative;
+    align-items: center;
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.tabela-de-notas-calc .botoes-reset-calc .botao-restore,
+.botao-calc {
+    height: 5vh;
+    width: 200px;
+}
+.botao-restore{
+    color: red;
+}
 
 
 
@@ -379,7 +379,7 @@
     }
 
     .box-calctext-inicio .calc-texto {
-        font-size: 95px;
+        font-size: 85px;
         width: 100vw;
         height: 100px;
         text-align: center;

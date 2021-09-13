@@ -41,7 +41,7 @@
     <div id="vs" class="box-nome-escola-enviar bg-light bg-gradient rounded-3">
       <div class="textos-geral border-bottom">
         <div class="textos-calcmedia-mark">
-          <h1 class="mark t1 d-flex text-dark">Calc<span class="mark t2 d-flex text-success"> Média</span></h1>
+          <img src="../assets/img/android-chrome-192x192.png" class="img-box-calcmedia m-4" width="80" height="75">
         </div>
         <blockquote class="blockquote-calc blockquote fs-6 text-secondary text-center">Para começar, digite seu nome e
           sua
@@ -61,7 +61,7 @@
 
         <div class="go-calc">
           <div class="d-grid gap-2 col-5 mx-auto">
-            <button class="btn bg-gradient btn-lg btn-success" onclick="getVal1()">Pronto!</button>
+            <button class="btn bg-gradient btn-lg btn-success" id="btCalc" onclick="boasVindas()">Pronto!</button>
 
           </div>
         </div>
@@ -69,12 +69,11 @@
     </div>
 
     <div class="tabela-de-notas-calc rounded-1">
-      <div class="ola-nome-escola-tabela d-flex">
+      <div class="ola-nome-escola-tabela d-flex bg-gradient">
         <div id="textoHere" class="texto-boas-vindas"></div>
-
+          
       </div>
-
-      <table class="table my-4  d table-bordered border-dark">
+      <table class="table my-4 d table-bordered border-dark">
         <thead class="table-dark">
 
           <th scope="col" class="col-sm-1">
@@ -93,7 +92,7 @@
 
         <tbody class="table-striped">
 
-          <tr class="linha-1 linhas table-success">
+          <tr class="linha-1 linhas table-secondary">
             <td scope="row">
               <input type="text" placeholder="Matéria" class="row-1 input">
               </input>
@@ -104,7 +103,7 @@
             <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
             <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
 
-            <td scope="row" class=""><label id="resultado1" class="row-1"></label></td>
+            <td scope="row" class=""><label id="resultado1" class="resultados"></label></td>
 
 
           </tr>
@@ -118,11 +117,11 @@
             <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
             <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
             <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
-            <td scope="row" class=""><label id="resultado2" class="row-1"></label></td>
+            <td scope="row" class=""><label id="resultado2" class="resultados"></label></td>
 
 
           </tr>
-          <tr class="linha-3 colunas  table-success">
+          <tr class="linha-3 colunas table-secondary">
             <td scope="row">
               <input type="text" placeholder="Matéria" class="row-1 input">
               </input>
@@ -133,7 +132,7 @@
             <td scope="row" class=""><input class="row-1" placeholder="Nota"> </input></td>
             <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
 
-            <td scope="row" class=""><label id="resultado1" class="row-1"></label></td>
+            <td scope="row" class=""><label id="resultado3" class="resultados"></label></td>
 
 
           </tr>
@@ -148,11 +147,11 @@
             <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
             <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
 
-            <td scope="row" class=""><label id="resultado1" class="row-1"></label></td>
+            <td scope="row" class=""><label id="resultado4" class="resultados"></label></td>
 
 
           </tr>
-          <tr class="linha-5 colunas table-success ">
+          <tr class="linha-5 colunas table-secondary ">
             <td scope="row">
               <input type="text" placeholder="Matéria" class="row-1 input">
               </input>
@@ -163,7 +162,7 @@
             <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
             <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
 
-            <td scope="row" class=""><label id="resultado1" class="row-1"></label></td>
+            <td scope="row" class=""><label id="resultado5" class="resultados"></label></td>
 
 
           </tr>
@@ -179,11 +178,11 @@
             <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
             <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
 
-            <td scope="row" class=""><label id="resultado1" class="row-1"></label></td>
+            <td scope="row" class=""><label id="resultado6" class="resultados"></label></td>
 
 
           </tr>
-          <tr class="linha-7 colunas table-success">
+          <tr class="linha-7 colunas table-secondary">
             <td scope="row">
               <input type="text" placeholder="Matéria" class="row-1 input">
               </input>
@@ -194,13 +193,13 @@
             <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
             <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
 
-            <td scope="row" class=""><label id="resultado1" class="row-1"></label></td>
+            <td scope="row" class=""><label id="resultado7" class="resultados"></label></td>
 
 
           </tr>
-          <tr class="linha-8 colunas">
+          <tr class="linha-8 colunas"></tr>
             <td scope="row">
-              <input type="text" placeholder="Matéria" class="row-1 input" >
+              <input type="text" placeholder="Matéria" class="row-1 input">
               </input>
             </td>
 
@@ -209,32 +208,34 @@
             <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
             <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
 
-            <td scope="row" class=""><label id="resultado1" class="row-1"></label></td>
+            <td scope="row" class=""><label id="resultado8" class="resultados"></label></td>
 
 
           </tr>
 
-
-
-          </tr>
+         </tr>
 
         </tbody>
 
         <tfoot>
-          <td scope="row">Média Final:</td>
+          <td scope="row" class="table-dark">Média Final:</td>
           <td scope="row" class="table-secondary"></td>
           <td scope="row" class="table-secondary"></td>
           <td scope="row" class="table-secondary"></td>
           <td scope="row" class="table-secondary"></td>
-          <td scope="row" id="mediaFinal" class="table-info">MF HERE!</td>
+          <td scope="row" id="mediaFinal" class="table-dark mediaFinal">MF HERE!</td>
 
         </tfoot>
 
       </table>
 
-    </div>
+  <div class="botoes-reset-calc d-grid gap-3 d-md-flex justify-content-center bg-gradient">
+    <button class="btn btn-secondary me-md-3 botao-restore" type="button" onclick="restaurarInputs()">Restaurar</button>
+    <button class="btn btn-success botao-calc" type="button">Calcule!</button>
   </div>
 
+    </div>
+  </div>
 
 
 </body>
