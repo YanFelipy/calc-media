@@ -13,14 +13,15 @@
 
 <body class="calc bg-dark">
 
-  <img src="../assets/img/bg2.jpg"class="img-fluid bg-fundo-calc">
+  <img src="../assets/img/bg2.jpg" class="img-fluid bg-fundo-calc">
   <img src="../assets/img/giphy.gif" alt="" class="gifs gif-1  w-55 h-100 position-absolute">
   <img src="../assets/img/giphy.gif" alt="" class="gifs gif-2 w-55 h-100 position-absolute">
-  
+
   <div class="header-geral container-fluid bg-gradient bg-dark">
     <main>
       <header class="navegação-header d-flex flex-wrap justify-content-center py-2 mb-2 ">
-        <a href="../inicio.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <a href="../inicio.html"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
           <img src="../assets/img/android-chrome-192x192.png" class="nav-logo-calcmedia bi me-2" width="35" height="32">
           <span class="nome-calcmedia-header fs-2 text-white" translate="no">Calc Média</span>
         </a>
@@ -37,16 +38,17 @@
   </div>
 
   <div class="container principal-container">
-    <div class="box-nome-escola-enviar bg-light bg-gradient rounded-3">
+    <div id="vs" class="box-nome-escola-enviar bg-light bg-gradient rounded-3">
       <div class="textos-geral border-bottom">
         <div class="textos-calcmedia-mark">
           <h1 class="mark t1 d-flex text-dark">Calc<span class="mark t2 d-flex text-success"> Média</span></h1>
-            </div>
-        <blockquote class="blockquote-calc blockquote fs-6 text-secondary text-center">Para começar, digite seu nome e sua
+        </div>
+        <blockquote class="blockquote-calc blockquote fs-6 text-secondary text-center">Para começar, digite seu nome e
+          sua
           escola/instituição. </blockquote>
       </div>
 
-      <form class="form-nome-escola naf mb-3 col-md-7 mx-auto">
+      <div class="form-nome-escola naf mb-3 col-md-7 mx-auto">
         <div class="form-floating mb-3 fs-6">
           <input type="name" class="form-control" id="floatingInputName" placeholder="text" title="Insira seu nome">
           <label for="floatingInput">Nome</label>
@@ -59,13 +61,180 @@
 
         <div class="go-calc">
           <div class="d-grid gap-2 col-5 mx-auto">
-            <button class="btn bg-gradient btn-lg btn-success" onclick="test()">Pronto!</button>
+            <button class="btn bg-gradient btn-lg btn-success" onclick="getVal1()">Pronto!</button>
 
           </div>
         </div>
-      </form>
+      </div>
+    </div>
+
+    <div class="tabela-de-notas-calc rounded-1">
+      <div class="ola-nome-escola-tabela d-flex">
+        <div id="textoHere" class="texto-boas-vindas"></div>
+
+      </div>
+
+      <table class="table my-4  d table-bordered border-dark">
+        <thead class="table-dark">
+
+          <th scope="col" class="col-sm-1">
+            Materias:
+          </th>
+
+          <th scope="col" class="col-md-2">1 bim</th>
+          <th scope="col">2 bim</th>
+
+          <th scope="col">3 bim</th>
+          <th scope="col">4 bim</th>
+          <th scope="col">Notas Finais:</th>
+
+        </thead>
+
+
+        <tbody class="table-striped">
+
+          <tr class="linha-1 linhas table-success">
+            <td scope="row">
+              <input type="text" placeholder="Matéria" class="row-1 input">
+              </input>
+            </td>
+
+            <td scope="row" class=""><input placeholder="Nota" class="row-1"></input></td>
+            <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
+            <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
+            <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
+
+            <td scope="row" class=""><label id="resultado1" class="row-1"></label></td>
+
+
+          </tr>
+          <tr class="linha-2 linhas">
+            <td scope="row">
+              <input type="text" placeholder="Matéria" class="row-1 input">
+              </input>
+            </td>
+
+            <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
+            <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
+            <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
+            <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
+            <td scope="row" class=""><label id="resultado2" class="row-1"></label></td>
+
+
+          </tr>
+          <tr class="linha-3 colunas  table-success">
+            <td scope="row">
+              <input type="text" placeholder="Matéria" class="row-1 input">
+              </input>
+            </td>
+
+            <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
+            <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
+            <td scope="row" class=""><input class="row-1" placeholder="Nota"> </input></td>
+            <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
+
+            <td scope="row" class=""><label id="resultado1" class="row-1"></label></td>
+
+
+          </tr>
+          <tr class="linha-4 colunas">
+            <td scope="row">
+              <input type="text" placeholder="Matéria" class="row-1 input">
+              </input>
+            </td>
+
+            <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
+            <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
+            <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
+            <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
+
+            <td scope="row" class=""><label id="resultado1" class="row-1"></label></td>
+
+
+          </tr>
+          <tr class="linha-5 colunas table-success ">
+            <td scope="row">
+              <input type="text" placeholder="Matéria" class="row-1 input">
+              </input>
+            </td>
+
+            <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
+            <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
+            <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
+            <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
+
+            <td scope="row" class=""><label id="resultado1" class="row-1"></label></td>
+
+
+          </tr>
+
+          <tr class="linha-6 colunas">
+            <td scope="row">
+              <input type="text" placeholder="Matéria" class="row-1 input">
+              </input>
+            </td>
+
+            <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
+            <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
+            <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
+            <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
+
+            <td scope="row" class=""><label id="resultado1" class="row-1"></label></td>
+
+
+          </tr>
+          <tr class="linha-7 colunas table-success">
+            <td scope="row">
+              <input type="text" placeholder="Matéria" class="row-1 input">
+              </input>
+            </td>
+
+            <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
+            <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
+            <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
+            <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
+
+            <td scope="row" class=""><label id="resultado1" class="row-1"></label></td>
+
+
+          </tr>
+          <tr class="linha-8 colunas">
+            <td scope="row">
+              <input type="text" placeholder="Matéria" class="row-1 input" >
+              </input>
+            </td>
+
+            <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
+            <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
+            <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
+            <td scope="row" class=""><input class="row-1" placeholder="Nota"></input></td>
+
+            <td scope="row" class=""><label id="resultado1" class="row-1"></label></td>
+
+
+          </tr>
+
+
+
+          </tr>
+
+        </tbody>
+
+        <tfoot>
+          <td scope="row">Média Final:</td>
+          <td scope="row" class="table-secondary"></td>
+          <td scope="row" class="table-secondary"></td>
+          <td scope="row" class="table-secondary"></td>
+          <td scope="row" class="table-secondary"></td>
+          <td scope="row" id="mediaFinal" class="table-info">MF HERE!</td>
+
+        </tfoot>
+
+      </table>
+
     </div>
   </div>
+
 
 
 </body>

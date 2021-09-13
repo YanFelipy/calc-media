@@ -1,19 +1,26 @@
   function getVal1() {
-      const val1 = document.querySelector('#teste1').value;
-      console.log(val1);
-      const val2 = document.querySelector('#teste2').value;
-      console.log(val2);
+    const username = document.querySelector('#floatingInputName').value;
+    const escola = document.querySelector('#floatingInputSU').value;
 
-      const username = document.getElementById('username');
-      const escola = document.getElementById('escola');
+    username.textContent = username;
+    escola.textContent = escola;
+    const boasVindas = document.getElementById('#textoHere')
+    const divVaiSumir = document.getElementById('vs');
 
-      username.textContent = val1;
-      escola.textContent = val2;
 
-      const formzada = document.querySelector('.formzada');
-      formzada.style.display = "none";
+    username.textContent = username;
+    escola.textContent = escola;
 
-      const nomezada = document.querySelector('.nomezada');
-      nomezada.style.display = "block";
 
-        }
+    divVaiSumir.style.display = "none"
+
+
+    const nomezada = document.querySelector('.tabela-de-notas-calc');
+    nomezada.style.visibility = "visible";
+
+    boasVindas.textContent = `Olá,${username} seja bem-vindo. | Escola/Universidade: ${escola}`;
+
+
+
+
+  }
