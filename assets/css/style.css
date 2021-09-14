@@ -246,22 +246,24 @@
 }
 
 .calc .principal-container .tabela-de-notas-calc {
-    margin-top: 5%;
+    margin-top: 7%;
     width: 1800px;
-    height: 75vh;
+    height: 80vh;
     background-color: white;
-    visibility: hidden;
+visibility: hidden;
+    
 
 }
 
 .calc .principal-container .tabela-de-notas-calc .ola-nome-escola-tabela {
     width: 100%;
-    height: 5vh;
-    background-color: rgb(121, 121, 121);
+    height: 10vh;
+    background-color: rgb(169, 169, 169);
     position: relative;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     display: flex;
+    flex-direction: column;
     box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.555);
     border-radius: 2px;
 }
@@ -269,11 +271,19 @@
 .calc .principal-container .tabela-de-notas-calc .ola-nome-escola-tabela .texto-boas-vindas {
     font-size: 1.2rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: rgb(255, 255, 255);
+    color: rgb(74, 74, 74);
     margin-left: 30px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.555);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.139);
+    
 }
 
+.calc .principal-container .tabela-de-notas-calc .ola-nome-escola-tabela .desc-calcular {
+    font-size: 0.8em;
+    color: white;
+    z-index: 9000;
+    width: 100%;
+    height: 30px;
+}
 
 .calc .principal-container .tabela-de-notas-calc .table {
     width: 100%;
